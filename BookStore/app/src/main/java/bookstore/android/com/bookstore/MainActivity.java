@@ -1,14 +1,21 @@
 package bookstore.android.com.bookstore;
 
+import android.graphics.Color;
 import android.graphics.Paint;
+import android.graphics.PorterDuff;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 private TextView forgotPassword;
+    private EditText mobileEditText;
+    private EditText passEditText;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,6 +24,8 @@ private TextView forgotPassword;
         forgotPassword=(TextView)findViewById(R.id.forgot_password);
         forgotPassword.setPaintFlags(forgotPassword.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
         forgotPassword.setText(R.string.forgot_password);
+
+
         
 
     }
