@@ -17,7 +17,7 @@ private TextView forgotPassword;
         forgotPassword=(TextView)findViewById(R.id.forgot_password);
         forgotPassword.setPaintFlags(forgotPassword.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
         forgotPassword.setText(R.string.forgot_password);
-        
+
 
     }
 
@@ -39,6 +39,7 @@ private TextView forgotPassword;
         if (id == R.id.action_settings) {
             return true;
         }
+
 
         return super.onOptionsItemSelected(item);
     }
